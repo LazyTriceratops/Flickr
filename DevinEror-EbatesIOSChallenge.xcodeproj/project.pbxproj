@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E5EA841217175B30098BFC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5EA840217175B30098BFC5 /* AppDelegate.swift */; };
+		2E5EA843217175B30098BFC5 /* FlickrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5EA842217175B30098BFC5 /* FlickrViewController.swift */; };
+		2E5EA846217175B30098BFC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5EA844217175B30098BFC5 /* Main.storyboard */; };
+		2E5EA849217175B30098BFC5 /* DevinEror_EbatesIOSChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E5EA847217175B30098BFC5 /* DevinEror_EbatesIOSChallenge.xcdatamodeld */; };
+		2E5EA84B217175B50098BFC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5EA84A217175B50098BFC5 /* Assets.xcassets */; };
+		2E5EA84E217175B50098BFC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5EA84C217175B50098BFC5 /* LaunchScreen.storyboard */; };
+		2E5EA859217175B50098BFC5 /* DevinEror_EbatesIOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5EA858217175B50098BFC5 /* DevinEror_EbatesIOSChallengeTests.swift */; };
+		2E5EA864217175B50098BFC5 /* DevinEror_EbatesIOSChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5EA863217175B50098BFC5 /* DevinEror_EbatesIOSChallengeUITests.swift */; };
+		2E5EA8742171780B0098BFC5 /* FlickrTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5EA8732171780B0098BFC5 /* FlickrTableViewCell.swift */; };
+		2E5EA87921717A780098BFC5 /* FlickrModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5EA87821717A780098BFC5 /* FlickrModel.swift */; };
+		2E5EA87E2171801E0098BFC5 /* FlickrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5EA87D2171801E0098BFC5 /* FlickrClient.swift */; };
+		2E5EA880217184530098BFC5 /* FlickrDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5EA87F217184530098BFC5 /* FlickrDetailsVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E5EA855217175B50098BFC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E5EA835217175B30098BFC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5EA83C217175B30098BFC5;
+			remoteInfo = "DevinEror-EbatesIOSChallenge";
+		};
+		2E5EA860217175B50098BFC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E5EA835217175B30098BFC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5EA83C217175B30098BFC5;
+			remoteInfo = "DevinEror-EbatesIOSChallenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E5EA83D217175B30098BFC5 /* DevinEror-EbatesIOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DevinEror-EbatesIOSChallenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E5EA840217175B30098BFC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E5EA842217175B30098BFC5 /* FlickrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrViewController.swift; sourceTree = "<group>"; };
+		2E5EA845217175B30098BFC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E5EA848217175B30098BFC5 /* DevinEror_EbatesIOSChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DevinEror_EbatesIOSChallenge.xcdatamodel; sourceTree = "<group>"; };
+		2E5EA84A217175B50098BFC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E5EA84D217175B50098BFC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E5EA84F217175B50098BFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E5EA854217175B50098BFC5 /* DevinEror-EbatesIOSChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DevinEror-EbatesIOSChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E5EA858217175B50098BFC5 /* DevinEror_EbatesIOSChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevinEror_EbatesIOSChallengeTests.swift; sourceTree = "<group>"; };
+		2E5EA85A217175B50098BFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E5EA85F217175B50098BFC5 /* DevinEror-EbatesIOSChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DevinEror-EbatesIOSChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E5EA863217175B50098BFC5 /* DevinEror_EbatesIOSChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevinEror_EbatesIOSChallengeUITests.swift; sourceTree = "<group>"; };
+		2E5EA865217175B50098BFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E5EA8732171780B0098BFC5 /* FlickrTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrTableViewCell.swift; sourceTree = "<group>"; };
+		2E5EA87821717A780098BFC5 /* FlickrModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrModel.swift; sourceTree = "<group>"; };
+		2E5EA87D2171801E0098BFC5 /* FlickrClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrClient.swift; sourceTree = "<group>"; };
+		2E5EA87F217184530098BFC5 /* FlickrDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrDetailsVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E5EA83A217175B30098BFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5EA851217175B50098BFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5EA85C217175B50098BFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E5EA834217175B30098BFC5 = {
+			isa = PBXGroup;
+			children = (
+				2E5EA83F217175B30098BFC5 /* DevinEror-EbatesIOSChallenge */,
+				2E5EA857217175B50098BFC5 /* DevinEror-EbatesIOSChallengeTests */,
+				2E5EA862217175B50098BFC5 /* DevinEror-EbatesIOSChallengeUITests */,
+				2E5EA83E217175B30098BFC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E5EA83E217175B30098BFC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E5EA83D217175B30098BFC5 /* DevinEror-EbatesIOSChallenge.app */,
+				2E5EA854217175B50098BFC5 /* DevinEror-EbatesIOSChallengeTests.xctest */,
+				2E5EA85F217175B50098BFC5 /* DevinEror-EbatesIOSChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E5EA83F217175B30098BFC5 /* DevinEror-EbatesIOSChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				2E5EA840217175B30098BFC5 /* AppDelegate.swift */,
+				2E5EA875217178130098BFC5 /* Views */,
+				2E5EA87A21717A830098BFC5 /* Models */,
+				2E5EA84A217175B50098BFC5 /* Assets.xcassets */,
+				2E5EA84C217175B50098BFC5 /* LaunchScreen.storyboard */,
+				2E5EA84F217175B50098BFC5 /* Info.plist */,
+				2E5EA847217175B30098BFC5 /* DevinEror_EbatesIOSChallenge.xcdatamodeld */,
+			);
+			path = "DevinEror-EbatesIOSChallenge";
+			sourceTree = "<group>";
+		};
+		2E5EA857217175B50098BFC5 /* DevinEror-EbatesIOSChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E5EA858217175B50098BFC5 /* DevinEror_EbatesIOSChallengeTests.swift */,
+				2E5EA85A217175B50098BFC5 /* Info.plist */,
+			);
+			path = "DevinEror-EbatesIOSChallengeTests";
+			sourceTree = "<group>";
+		};
+		2E5EA862217175B50098BFC5 /* DevinEror-EbatesIOSChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E5EA863217175B50098BFC5 /* DevinEror_EbatesIOSChallengeUITests.swift */,
+				2E5EA865217175B50098BFC5 /* Info.plist */,
+			);
+			path = "DevinEror-EbatesIOSChallengeUITests";
+			sourceTree = "<group>";
+		};
+		2E5EA875217178130098BFC5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E5EA842217175B30098BFC5 /* FlickrViewController.swift */,
+				2E5EA8732171780B0098BFC5 /* FlickrTableViewCell.swift */,
+				2E5EA87F217184530098BFC5 /* FlickrDetailsVC.swift */,
+				2E5EA844217175B30098BFC5 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E5EA87A21717A830098BFC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E5EA87821717A780098BFC5 /* FlickrModel.swift */,
+				2E5EA87D2171801E0098BFC5 /* FlickrClient.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E5EA83C217175B30098BFC5 /* DevinEror-EbatesIOSChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E5EA868217175B50098BFC5 /* Build configuration list for PBXNativeTarget "DevinEror-EbatesIOSChallenge" */;
+			buildPhases = (
+				2E5EA839217175B30098BFC5 /* Sources */,
+				2E5EA83A217175B30098BFC5 /* Frameworks */,
+				2E5EA83B217175B30098BFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DevinEror-EbatesIOSChallenge";
+			productName = "DevinEror-EbatesIOSChallenge";
+			productReference = 2E5EA83D217175B30098BFC5 /* DevinEror-EbatesIOSChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E5EA853217175B50098BFC5 /* DevinEror-EbatesIOSChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E5EA86B217175B50098BFC5 /* Build configuration list for PBXNativeTarget "DevinEror-EbatesIOSChallengeTests" */;
+			buildPhases = (
+				2E5EA850217175B50098BFC5 /* Sources */,
+				2E5EA851217175B50098BFC5 /* Frameworks */,
+				2E5EA852217175B50098BFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E5EA856217175B50098BFC5 /* PBXTargetDependency */,
+			);
+			name = "DevinEror-EbatesIOSChallengeTests";
+			productName = "DevinEror-EbatesIOSChallengeTests";
+			productReference = 2E5EA854217175B50098BFC5 /* DevinEror-EbatesIOSChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E5EA85E217175B50098BFC5 /* DevinEror-EbatesIOSChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E5EA86E217175B50098BFC5 /* Build configuration list for PBXNativeTarget "DevinEror-EbatesIOSChallengeUITests" */;
+			buildPhases = (
+				2E5EA85B217175B50098BFC5 /* Sources */,
+				2E5EA85C217175B50098BFC5 /* Frameworks */,
+				2E5EA85D217175B50098BFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E5EA861217175B50098BFC5 /* PBXTargetDependency */,
+			);
+			name = "DevinEror-EbatesIOSChallengeUITests";
+			productName = "DevinEror-EbatesIOSChallengeUITests";
+			productReference = 2E5EA85F217175B50098BFC5 /* DevinEror-EbatesIOSChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E5EA835217175B30098BFC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Devin Eror";
+				TargetAttributes = {
+					2E5EA83C217175B30098BFC5 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					2E5EA853217175B50098BFC5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 2E5EA83C217175B30098BFC5;
+					};
+					2E5EA85E217175B50098BFC5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 2E5EA83C217175B30098BFC5;
+					};
+				};
+			};
+			buildConfigurationList = 2E5EA838217175B30098BFC5 /* Build configuration list for PBXProject "DevinEror-EbatesIOSChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E5EA834217175B30098BFC5;
+			productRefGroup = 2E5EA83E217175B30098BFC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E5EA83C217175B30098BFC5 /* DevinEror-EbatesIOSChallenge */,
+				2E5EA853217175B50098BFC5 /* DevinEror-EbatesIOSChallengeTests */,
+				2E5EA85E217175B50098BFC5 /* DevinEror-EbatesIOSChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E5EA83B217175B30098BFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E5EA84E217175B50098BFC5 /* LaunchScreen.storyboard in Resources */,
+				2E5EA84B217175B50098BFC5 /* Assets.xcassets in Resources */,
+				2E5EA846217175B30098BFC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5EA852217175B50098BFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5EA85D217175B50098BFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E5EA839217175B30098BFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E5EA849217175B30098BFC5 /* DevinEror_EbatesIOSChallenge.xcdatamodeld in Sources */,
+				2E5EA87921717A780098BFC5 /* FlickrModel.swift in Sources */,
+				2E5EA843217175B30098BFC5 /* FlickrViewController.swift in Sources */,
+				2E5EA8742171780B0098BFC5 /* FlickrTableViewCell.swift in Sources */,
+				2E5EA880217184530098BFC5 /* FlickrDetailsVC.swift in Sources */,
+				2E5EA841217175B30098BFC5 /* AppDelegate.swift in Sources */,
+				2E5EA87E2171801E0098BFC5 /* FlickrClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5EA850217175B50098BFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E5EA859217175B50098BFC5 /* DevinEror_EbatesIOSChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5EA85B217175B50098BFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E5EA864217175B50098BFC5 /* DevinEror_EbatesIOSChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E5EA856217175B50098BFC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E5EA83C217175B30098BFC5 /* DevinEror-EbatesIOSChallenge */;
+			targetProxy = 2E5EA855217175B50098BFC5 /* PBXContainerItemProxy */;
+		};
+		2E5EA861217175B50098BFC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E5EA83C217175B30098BFC5 /* DevinEror-EbatesIOSChallenge */;
+			targetProxy = 2E5EA860217175B50098BFC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E5EA844217175B30098BFC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E5EA845217175B30098BFC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E5EA84C217175B50098BFC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E5EA84D217175B50098BFC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E5EA866217175B50098BFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E5EA867217175B50098BFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E5EA869217175B50098BFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y92JF627VV;
+				INFOPLIST_FILE = "DevinEror-EbatesIOSChallenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devineror.DevinEror-EbatesIOSChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E5EA86A217175B50098BFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y92JF627VV;
+				INFOPLIST_FILE = "DevinEror-EbatesIOSChallenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devineror.DevinEror-EbatesIOSChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E5EA86C217175B50098BFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y92JF627VV;
+				INFOPLIST_FILE = "DevinEror-EbatesIOSChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devineror.DevinEror-EbatesIOSChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevinEror-EbatesIOSChallenge.app/DevinEror-EbatesIOSChallenge";
+			};
+			name = Debug;
+		};
+		2E5EA86D217175B50098BFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y92JF627VV;
+				INFOPLIST_FILE = "DevinEror-EbatesIOSChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devineror.DevinEror-EbatesIOSChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevinEror-EbatesIOSChallenge.app/DevinEror-EbatesIOSChallenge";
+			};
+			name = Release;
+		};
+		2E5EA86F217175B50098BFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y92JF627VV;
+				INFOPLIST_FILE = "DevinEror-EbatesIOSChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devineror.DevinEror-EbatesIOSChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DevinEror-EbatesIOSChallenge";
+			};
+			name = Debug;
+		};
+		2E5EA870217175B50098BFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y92JF627VV;
+				INFOPLIST_FILE = "DevinEror-EbatesIOSChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devineror.DevinEror-EbatesIOSChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DevinEror-EbatesIOSChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E5EA838217175B30098BFC5 /* Build configuration list for PBXProject "DevinEror-EbatesIOSChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E5EA866217175B50098BFC5 /* Debug */,
+				2E5EA867217175B50098BFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E5EA868217175B50098BFC5 /* Build configuration list for PBXNativeTarget "DevinEror-EbatesIOSChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E5EA869217175B50098BFC5 /* Debug */,
+				2E5EA86A217175B50098BFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E5EA86B217175B50098BFC5 /* Build configuration list for PBXNativeTarget "DevinEror-EbatesIOSChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E5EA86C217175B50098BFC5 /* Debug */,
+				2E5EA86D217175B50098BFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E5EA86E217175B50098BFC5 /* Build configuration list for PBXNativeTarget "DevinEror-EbatesIOSChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E5EA86F217175B50098BFC5 /* Debug */,
+				2E5EA870217175B50098BFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2E5EA847217175B30098BFC5 /* DevinEror_EbatesIOSChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E5EA848217175B30098BFC5 /* DevinEror_EbatesIOSChallenge.xcdatamodel */,
+			);
+			currentVersion = 2E5EA848217175B30098BFC5 /* DevinEror_EbatesIOSChallenge.xcdatamodel */;
+			path = DevinEror_EbatesIOSChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2E5EA835217175B30098BFC5 /* Project object */;
+}
